@@ -60,6 +60,7 @@ nav {
 }
 nav .menu {
   text-align: center;
+  margin-left: 100px;
 }
 nav .menu .menu-items {
   text-decoration: none;

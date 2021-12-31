@@ -70,7 +70,7 @@ $div-input-color: rgb(220, 211, 200);
 
 /*nav*/
 nav{background-color:$bg-color;height: 20vh;
- .menu{text-align: center;
+ .menu{text-align: center; margin-left: 100px;
     .menu-items{text-decoration:none; color:rgb(0,0,0); font-family: Regular; padding: 0px 30px; font-size: 20px; position:relative; top:-60px;
     &:hover{color: $hover;}
     }
