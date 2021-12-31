@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    overflow-x: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+//------------------------------------------------
+// VARIABLES
+//------------------------------------------------
+$bg-color : rgb(241, 237, 233);
+$button-color: rgb(78, 15, 96);
+$hover : rgb(78, 15, 96);
+$text-bg-color: rgb(180, 144, 167);
+$div-input-color: rgb(220, 211, 200);
+
+
+
+//------------------------------------------------
+// MIXINS
+//------------------------------------------------
+@mixin hvr{border-radius: 5px; background-color:rgb(63, 1, 80);}
+
+
+//------------------------------------------------
+//  ADDITIONAL CSS 
+//------------------------------------------------
+
+/*nav*/
+nav{background-color:$bg-color;height: 20vh;
+ .menu{text-align: center;
+    .menu-items{text-decoration:none; color:rgb(0,0,0); font-family: Regular; padding: 0px 30px; font-size: 20px; position:relative; top:-60px;
+    &:hover{color: $hover;}
+    }
+
+    .logo >img{
+        width:150px; margin-top:30px;
+    }
+ }
+}
+
+/*banner*/
+.home{background-color:$bg-color;position:relative;height:80vh;
+    .banner{
+        #one{position:absolute;top:50px; left:120px; z-index: 2;
+            > img{ width:70%; height:auto; }
+        }
+        #two{position:absolute;top:120px; left:310px; z-index:1;
+            > img{width:70%; height: auto;}
+        }
+        #three{position:absolute; top:20px;right:130px; z-index:0;
+            > img{width:75%;height: auto;}
+        }
+        #four{position:absolute; top:-20px;right:20px;
+            > img{width:70%; height: auto;}
+        }
+        #five{position:absolute; top:389px;right:430px;
+            > h1{font-size: 40px; color: rgb(0,0,0); font-family: light;}
+        }
+        #six{position:absolute; top:440px; right:530px;
+            > img{width:70%; height: auto;}
+        }
+        #seven{position:absolute; top:460px; right: 550px;
+            > h3{font-size:20px; color: rgb(0,0,0); font-family: light;}
+        }
+    }
+}
+
+/*about*/
+.about{padding-top: 100px;
+    #s-one{width:100%;height:38vh;
+        >div {
+            >div >#text-one{width:85%;position:absolute; left:70px;
+            h3{color: rgb(0,0,0); font-size: 25px; font-family:Regular;font-weight:500px;}
+            img{width:100%;}
+            p{color: rgb(0,0,0);font-family:light; font-size:18px;}
+        }
+
+     #img{margin-top:-120px;
+         >#image-one{position:absolute; top: 170px;right:-100px;
+            >img{width:70%;}
+        }}
+    }
+    }
+
+    #s-two{background-color: $bg-color; padding-top:80px; height:65vh;
+        >div {
+            >div{
+            >#img-one{position:absolute; left:190px;top:-40px;
+                img{width:70%;}
+            }
+
+            >#img-two{position:absolute; right:-50px;
+                img{width:70%;}
+            }
+        }
+
+        >div{
+            #text-two{position:absolute; top:60px;width:60%;left:100px;
+                p{font-size:18px; color:rgb(0,0,0); font-family: light;}
+                a{text-decoration:none; color: $bg-color; background-color:$button-color;padding: 10px 20px; font-family: light; position:relative; top: 40px;
+                 &:hover{@include hvr;  transition: ease-in-out 500ms;}
+                }
+            }
+        }
+    }
+}
+}
+
+/*services*/
+.services{padding-top: 60px;
+    .onne{padding: 0px 70px;
+        h3{color: rgb(0,0,0); font-size: 25px; font-family:Regular; font-weight:500px;}
+        .line{width:60%;}
+
+        >div >div{margin:10px 0px;width:98%;
+            >#imgg{position:relative;
+                img{width:100%;}
+            }
+            >.text{position:absolute; background-color: $text-bg-color; padding:20px 0px; top:282px; text-align:center; width:91.1%;
+                >h3{color: rgb(0,0,0); font-size: 20px; font-family:light;}
+            }
+        }
+    }
+
+    .twoo{
+        >div >div{margin:20px 0px;width:98%;
+            >div{position:relative;width:90%;
+                #item1{width:100%;margin-left:53px;}
+                #item2{width:100%;margin-left:-20px;}
+            }
+            >.textt{position:absolute; background-color: $text-bg-color; padding:20px 0px; top:195px; text-align:center; left:68px; width:86.5%;
+                >h3{color: rgb(0,0,0); font-size: 20px; font-family:light;}
+            }
+            >.text{position:absolute; background-color: rgb(180, 144, 167); padding:20px 0px; top:195px; left:-5px; text-align:center; width:83.5%;
+                >h3{color: rgb(0,0,0); font-size: 20px; font-family:light;}
+            }
+        }
+    }
+}
+
+/*testimonials*/
+.testimonials{padding-top: 60px;
+    >div{
+        .row-one{
+            >div{border: white 2px solid;padding:0px;
+                >#frst{
+                    .img-one{width:565px;}
+                }
+                >#text{background-color:$div-input-color; height:98.5%;padding:50px 30px 40px 30px; text-align:center;
+                    h2{font-family: Regular; font-size:40px; color:rgb(0,0,0); margin-left: 40px;}
+                    h3{font-family: Regular; font-size: 20px; color:rgb(0,0,0); padding-top: 10px; padding-bottom:5px;}
+                    p{font-family: regular; font-size: 15px; color:rgb(0,0,0); padding-top: 5px;}
+                }
+                >.right-box{
+                    .img-two{width:280px; height:247px;}
+                }
+            }
+        }
+        .row-two{
+            >div{border: white 2px solid;padding:0px;
+                >.textt{background-color:$div-input-color; height:99%; width:100%; padding:70px 30px; text-align:center;
+                    p{font-family: light; font-size: 18px; color:rgb(0,0,0);}
+                }
+                >div{
+                    #image{width:280px; height:247px;}
+                }
+                >.textt2{background-color:$div-input-color; height:99%; width:100%; padding:50px 30px 40px 30px; text-align:center;
+                    h2{font-family: Regular; font-size:40px; color:rgb(0,0,0); margin-left: 40px;}
+                    h3{font-family: Regular; font-size: 20px; color:rgb(0,0,0); padding-top: 10px; padding-bottom:5px;}
+                    p{font-family: regular; font-size: 15px; color:rgb(0,0,0); padding-top: 5px;}
+                }
+            }
+        }
+    }
+}
+
+/*comments*/
+.comments{background-color: $bg-color;margin:30px 0px;padding:30px 0px;
+    >div >div{
+        >div{
+            #text{
+                p{font-family: light; font-size:20px; padding-bottom:15px;}
+                h2{font-family: regular; font-size:25px;}
+            }
+        }
+        >div{
+            form{margin-top:5px;
+                input{background-color:$div-input-color; border:none; font-family: light; font-size: 16px; padding:15px 30px; color:rgb(0,0,0);margin:0px 10px; width:290px; outline:none;
+                }
+                a{text-decoration:none; color: $bg-color; font-family: light; font-size: 16px;background-color:$button-color;padding: 15px 20px; position:relative; margin: 0px 10px;
+                    &:hover{@include hvr;  transition: ease-in-out 500ms;}
+                   }
+            }
+        }
+    }
+}
+
+/*footer*/
+footer{background-color:rgb(78, 15, 96);padding-top:60px;padding-bottom:50px;
+    >div{
+        .heading{text-align:center;margin-bottom:50px;
+            h3{font-size:20px; font-family:light; color: rgb(0,0,0)}
+            p{font-family:regular; font-size:14px; color:white; }
+        }
+
+        >div{
+           #first{position:relative; border-right: $bg-color 2px solid;
+               h3{font-family: light; font-size:16px; color:white;}
+               hr{background-color:white; border:none; opacity:1; height:1px; width: 25%; float:left;}
+
+               >.fst{position:relative; top:50px;left:-90px;
+                >ul >li {margin-bottom:10px;
+                    a{text-decoration:none; color:white; font-size:14px; font-family: light; 
+                        &:hover{font-size:16px; color:rgb(180, 144, 167)}
+                    }}
+            }
+               >.snd{position:relative; top:50px;left:-5px;
+                >ul >li {margin-bottom:10px;
+                    a{text-decoration:none; color:white; font-size:14px; font-family: light; 
+                        &:hover{font-size:16px; color:rgb(180, 144, 167)}
+                    }}
+            }
+           } 
+
+           #second{position:relative; border-right: $bg-color 2px solid;
+            h3{font-family: light; font-size:16px; color:white;}
+            hr{background-color:white; border:none; opacity:1; height:1px; width: 25%; float:left;}
+           
+            .icons{position:relative; top:50px; left:0px;
+                .icon1{position:relative; left:-60px;}
+                .icon2{position:relative; left: -30px;}
+                .icon3{position:relative;}
+            }
+           }
+
+           #third{display:flex; flex-direction:row;
+            >div{
+                img{width:80%;}
+            }
+           }
+
+        }
+        
+        #copyright{display:flex; flex-direction:column; text-align:center; margin-top:40px;
+           >div{
+               >#CR{width:20%;}
+           }
+           >#credit{margin-top:10px;
+            p{font-family:light; color: white; font-size:14px;
+                a{text-decoration:none; color:white; font-size: 18px; font-family:bold;
+                 &:hover{text-decoration:underline; font-size:23px;}
+                }
+            }
+        }
+    }
+}
+}

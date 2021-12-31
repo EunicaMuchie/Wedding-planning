@@ -1,0 +1,595 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*nav*/
+nav {
+  background-color: #f1ede9;
+  height: 20vh;
+}
+nav .menu {
+  text-align: center;
+}
+nav .menu .menu-items {
+  text-decoration: none;
+  color: black;
+  font-family: Regular;
+  padding: 0px 30px;
+  font-size: 20px;
+  position: relative;
+  top: -60px;
+}
+nav .menu .menu-items:hover {
+  color: #4e0f60;
+}
+nav .menu .logo > img {
+  width: 150px;
+  margin-top: 30px;
+}
+
+/*banner*/
+.home {
+  background-color: #f1ede9;
+  position: relative;
+  height: 80vh;
+}
+.home .banner #one {
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  z-index: 2;
+}
+.home .banner #one > img {
+  width: 70%;
+  height: auto;
+}
+.home .banner #two {
+  position: absolute;
+  top: 120px;
+  left: 310px;
+  z-index: 1;
+}
+.home .banner #two > img {
+  width: 70%;
+  height: auto;
+}
+.home .banner #three {
+  position: absolute;
+  top: 20px;
+  right: 130px;
+  z-index: 0;
+}
+.home .banner #three > img {
+  width: 75%;
+  height: auto;
+}
+.home .banner #four {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+.home .banner #four > img {
+  width: 70%;
+  height: auto;
+}
+.home .banner #five {
+  position: absolute;
+  top: 389px;
+  right: 430px;
+}
+.home .banner #five > h1 {
+  font-size: 40px;
+  color: black;
+  font-family: light;
+}
+.home .banner #six {
+  position: absolute;
+  top: 440px;
+  right: 530px;
+}
+.home .banner #six > img {
+  width: 70%;
+  height: auto;
+}
+.home .banner #seven {
+  position: absolute;
+  top: 460px;
+  right: 550px;
+}
+.home .banner #seven > h3 {
+  font-size: 20px;
+  color: black;
+  font-family: light;
+}
+
+/*about*/
+.about {
+  padding-top: 100px;
+}
+.about #s-one {
+  width: 100%;
+  height: 38vh;
+}
+.about #s-one > div > div > #text-one {
+  width: 85%;
+  position: absolute;
+  left: 70px;
+}
+.about #s-one > div > div > #text-one h3 {
+  color: black;
+  font-size: 25px;
+  font-family: Regular;
+  font-weight: 500px;
+}
+.about #s-one > div > div > #text-one img {
+  width: 100%;
+}
+.about #s-one > div > div > #text-one p {
+  color: black;
+  font-family: light;
+  font-size: 18px;
+}
+.about #s-one > div #img {
+  margin-top: -120px;
+}
+.about #s-one > div #img > #image-one {
+  position: absolute;
+  top: 170px;
+  right: -100px;
+}
+.about #s-one > div #img > #image-one > img {
+  width: 70%;
+}
+.about #s-two {
+  background-color: #f1ede9;
+  padding-top: 80px;
+  height: 65vh;
+}
+.about #s-two > div > div > #img-one {
+  position: absolute;
+  left: 190px;
+  top: -40px;
+}
+.about #s-two > div > div > #img-one img {
+  width: 70%;
+}
+.about #s-two > div > div > #img-two {
+  position: absolute;
+  right: -50px;
+}
+.about #s-two > div > div > #img-two img {
+  width: 70%;
+}
+.about #s-two > div > div #text-two {
+  position: absolute;
+  top: 60px;
+  width: 60%;
+  left: 100px;
+}
+.about #s-two > div > div #text-two p {
+  font-size: 18px;
+  color: black;
+  font-family: light;
+}
+.about #s-two > div > div #text-two a {
+  text-decoration: none;
+  color: #f1ede9;
+  background-color: #4e0f60;
+  padding: 10px 20px;
+  font-family: light;
+  position: relative;
+  top: 40px;
+}
+.about #s-two > div > div #text-two a:hover {
+  border-radius: 5px;
+  background-color: #3f0150;
+  transition: ease-in-out 500ms;
+}
+
+/*services*/
+.services {
+  padding-top: 60px;
+}
+.services .onne {
+  padding: 0px 70px;
+}
+.services .onne h3 {
+  color: black;
+  font-size: 25px;
+  font-family: Regular;
+  font-weight: 500px;
+}
+.services .onne .line {
+  width: 60%;
+}
+.services .onne > div > div {
+  margin: 10px 0px;
+  width: 98%;
+}
+.services .onne > div > div > #imgg {
+  position: relative;
+}
+.services .onne > div > div > #imgg img {
+  width: 100%;
+}
+.services .onne > div > div > .text {
+  position: absolute;
+  background-color: #b490a7;
+  padding: 20px 0px;
+  top: 282px;
+  text-align: center;
+  width: 91.1%;
+}
+.services .onne > div > div > .text > h3 {
+  color: black;
+  font-size: 20px;
+  font-family: light;
+}
+.services .twoo > div > div {
+  margin: 20px 0px;
+  width: 98%;
+}
+.services .twoo > div > div > div {
+  position: relative;
+  width: 90%;
+}
+.services .twoo > div > div > div #item1 {
+  width: 100%;
+  margin-left: 53px;
+}
+.services .twoo > div > div > div #item2 {
+  width: 100%;
+  margin-left: -20px;
+}
+.services .twoo > div > div > .textt {
+  position: absolute;
+  background-color: #b490a7;
+  padding: 20px 0px;
+  top: 195px;
+  text-align: center;
+  left: 68px;
+  width: 86.5%;
+}
+.services .twoo > div > div > .textt > h3 {
+  color: black;
+  font-size: 20px;
+  font-family: light;
+}
+.services .twoo > div > div > .text {
+  position: absolute;
+  background-color: #b490a7;
+  padding: 20px 0px;
+  top: 195px;
+  left: -5px;
+  text-align: center;
+  width: 83.5%;
+}
+.services .twoo > div > div > .text > h3 {
+  color: black;
+  font-size: 20px;
+  font-family: light;
+}
+
+/*testimonials*/
+.testimonials {
+  padding-top: 60px;
+}
+.testimonials > div .row-one > div {
+  border: white 2px solid;
+  padding: 0px;
+}
+.testimonials > div .row-one > div > #frst .img-one {
+  width: 565px;
+}
+.testimonials > div .row-one > div > #text {
+  background-color: #dcd3c8;
+  height: 98.5%;
+  padding: 50px 30px 40px 30px;
+  text-align: center;
+}
+.testimonials > div .row-one > div > #text h2 {
+  font-family: Regular;
+  font-size: 40px;
+  color: black;
+  margin-left: 40px;
+}
+.testimonials > div .row-one > div > #text h3 {
+  font-family: Regular;
+  font-size: 20px;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.testimonials > div .row-one > div > #text p {
+  font-family: regular;
+  font-size: 15px;
+  color: black;
+  padding-top: 5px;
+}
+.testimonials > div .row-one > div > .right-box .img-two {
+  width: 280px;
+  height: 247px;
+}
+.testimonials > div .row-two > div {
+  border: white 2px solid;
+  padding: 0px;
+}
+.testimonials > div .row-two > div > .textt {
+  background-color: #dcd3c8;
+  height: 99%;
+  width: 100%;
+  padding: 70px 30px;
+  text-align: center;
+}
+.testimonials > div .row-two > div > .textt p {
+  font-family: light;
+  font-size: 18px;
+  color: black;
+}
+.testimonials > div .row-two > div > div #image {
+  width: 280px;
+  height: 247px;
+}
+.testimonials > div .row-two > div > .textt2 {
+  background-color: #dcd3c8;
+  height: 99%;
+  width: 100%;
+  padding: 50px 30px 40px 30px;
+  text-align: center;
+}
+.testimonials > div .row-two > div > .textt2 h2 {
+  font-family: Regular;
+  font-size: 40px;
+  color: black;
+  margin-left: 40px;
+}
+.testimonials > div .row-two > div > .textt2 h3 {
+  font-family: Regular;
+  font-size: 20px;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+.testimonials > div .row-two > div > .textt2 p {
+  font-family: regular;
+  font-size: 15px;
+  color: black;
+  padding-top: 5px;
+}
+
+/*comments*/
+.comments {
+  background-color: #f1ede9;
+  margin: 30px 0px;
+  padding: 30px 0px;
+}
+.comments > div > div > div #text p {
+  font-family: light;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.comments > div > div > div #text h2 {
+  font-family: regular;
+  font-size: 25px;
+}
+.comments > div > div > div form {
+  margin-top: 5px;
+}
+.comments > div > div > div form input {
+  background-color: #dcd3c8;
+  border: none;
+  font-family: light;
+  font-size: 16px;
+  padding: 15px 30px;
+  color: black;
+  margin: 0px 10px;
+  width: 290px;
+  outline: none;
+}
+.comments > div > div > div form a {
+  text-decoration: none;
+  color: #f1ede9;
+  font-family: light;
+  font-size: 16px;
+  background-color: #4e0f60;
+  padding: 15px 20px;
+  position: relative;
+  margin: 0px 10px;
+}
+.comments > div > div > div form a:hover {
+  border-radius: 5px;
+  background-color: #3f0150;
+  transition: ease-in-out 500ms;
+}
+
+/*footer*/
+footer {
+  background-color: #4e0f60;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+footer > div .heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+footer > div .heading h3 {
+  font-size: 20px;
+  font-family: light;
+  color: black;
+}
+footer > div .heading p {
+  font-family: regular;
+  font-size: 14px;
+  color: white;
+}
+footer > div > div #first {
+  position: relative;
+  border-right: #f1ede9 2px solid;
+}
+footer > div > div #first h3 {
+  font-family: light;
+  font-size: 16px;
+  color: white;
+}
+footer > div > div #first hr {
+  background-color: white;
+  border: none;
+  opacity: 1;
+  height: 1px;
+  width: 25%;
+  float: left;
+}
+footer > div > div #first > .fst {
+  position: relative;
+  top: 50px;
+  left: -90px;
+}
+footer > div > div #first > .fst > ul > li {
+  margin-bottom: 10px;
+}
+footer > div > div #first > .fst > ul > li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: light;
+}
+footer > div > div #first > .fst > ul > li a:hover {
+  font-size: 16px;
+  color: #b490a7;
+}
+footer > div > div #first > .snd {
+  position: relative;
+  top: 50px;
+  left: -5px;
+}
+footer > div > div #first > .snd > ul > li {
+  margin-bottom: 10px;
+}
+footer > div > div #first > .snd > ul > li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: light;
+}
+footer > div > div #first > .snd > ul > li a:hover {
+  font-size: 16px;
+  color: #b490a7;
+}
+footer > div > div #second {
+  position: relative;
+  border-right: #f1ede9 2px solid;
+}
+footer > div > div #second h3 {
+  font-family: light;
+  font-size: 16px;
+  color: white;
+}
+footer > div > div #second hr {
+  background-color: white;
+  border: none;
+  opacity: 1;
+  height: 1px;
+  width: 25%;
+  float: left;
+}
+footer > div > div #second .icons {
+  position: relative;
+  top: 50px;
+  left: 0px;
+}
+footer > div > div #second .icons .icon1 {
+  position: relative;
+  left: -60px;
+}
+footer > div > div #second .icons .icon2 {
+  position: relative;
+  left: -30px;
+}
+footer > div > div #second .icons .icon3 {
+  position: relative;
+}
+footer > div > div #third {
+  display: flex;
+  flex-direction: row;
+}
+footer > div > div #third > div img {
+  width: 80%;
+}
+footer > div #copyright {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 40px;
+}
+footer > div #copyright > div > #CR {
+  width: 20%;
+}
+footer > div #copyright > #credit {
+  margin-top: 10px;
+}
+footer > div #copyright > #credit p {
+  font-family: light;
+  color: white;
+  font-size: 14px;
+}
+footer > div #copyright > #credit p a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: bold;
+}
+footer > div #copyright > #credit p a:hover {
+  text-decoration: underline;
+  font-size: 23px;
+}/*# sourceMappingURL=style.css.map */
